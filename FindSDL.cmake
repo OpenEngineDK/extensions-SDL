@@ -33,6 +33,7 @@ FIND_PATH(SDL_INCLUDE_DIR SDL.h
   $ENV{SDLDIR}/include
   ~/Library/Frameworks/SDL.framework/Headers
   /Library/Frameworks/SDL.framework/Headers
+  /opt/homebrew/include/SDL
   /usr/local/include/SDL
   /usr/include/SDL
   /usr/local/include/SDL12
@@ -88,6 +89,7 @@ ELSE(${SDL_INCLUDE_DIR} MATCHES ".framework")
     NAMES SDL SDL-1.1
     PATHS
     $ENV{SDLDIR}/lib
+    /opt/homebrew/lib
     /usr/local/lib
     /usr/lib
     /sw/lib
